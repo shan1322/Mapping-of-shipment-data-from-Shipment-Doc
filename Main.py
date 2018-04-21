@@ -35,12 +35,15 @@ class final:
             res=rs.rsize(Input_image)
             val=pytesseract.image_to_string(res)
             textfree=tp.nlp(val)
-            #print(textfree)
-            print((textfree),10)
+            if(len(textfree)>0):
+                print((textfree))
+            elif(len(textfree)==0):
+                print("The image does not have a valid Tracking ID")
         elif(len(text)==0 and len(text90)>0):
-            print((text90),90)
+            print((text90))
         elif(len(text90)==0 and len(text)>0):
-            print((text),0)
+            print((text))
+
 image=input()#the accutal image
 f=final()
 f.main(image)

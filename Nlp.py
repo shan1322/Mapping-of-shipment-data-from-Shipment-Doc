@@ -28,7 +28,6 @@ class Textprocessing:
                 if(words[j][0].isalpha()):
                     alpha.append(words[j][0])
                 if(re.match(testspace,words[j][0])):
-                    print(words[j][0])
                     alphanum.append((words[j][0]).replace(" ",""))
         test=set(alphanum)-set(alpha)
         trackid=list(set().union(test,cardinal))

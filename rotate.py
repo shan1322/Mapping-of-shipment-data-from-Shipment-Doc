@@ -1,3 +1,5 @@
+#Agranya Pratap Singh
+#Rotated image output
 import imutils
 import PIL
 from PIL import Image

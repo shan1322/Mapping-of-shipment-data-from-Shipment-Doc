@@ -61,8 +61,7 @@ class Extract:
                 cv2.imwrite('images/non'+str(i)+'.png',out)
                 textv=pytesseract.image_to_string(out)
                 barcodes.append(textv)
-                #file.write(textv)
-        #file.close()
+    
         for i in barcodes:
             output=output+i+" "
         return((output))#returns 5 image arryas

@@ -1,3 +1,3 @@
 #######Run this script to the program
 python main.py
-sleep 5
+sleep 100
