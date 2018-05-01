@@ -27,14 +27,14 @@ class Textprocessing:
                     while((j+k)<len1 and words[j+k][0][0]>='0' and words[j+k][0][0]<='9'):
                         temp=temp+words[j+k][0]
                         k+=1
-                        cardinal.append(temp)
+                    cardinal.append(temp)
                 elif(re.match("^[a-zA-Z0-9]+(?:_[a-zA-Z0-9]+)?$", words[j][0])):
                     temp=words[j][0]
                     k=1
                     while((j+k)<len1 and words[j+k][0][0]>='0' and words[j+k][0][0]<='9'):
                         temp=temp+words[j+k][0]
                         k+=1
-                        alphanum.append(temp)
+                    alphanum.append(temp)
                 if(words[j][0].isalpha()):
                     alpha.append(words[j][0])
                 if(re.match(testspace,words[j][0])):
