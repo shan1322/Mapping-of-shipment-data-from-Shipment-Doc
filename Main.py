@@ -31,7 +31,7 @@ class final:
         rotated90=rot90.rotateImage(Input_image)
         bar90=ext.barcode(rotated90)
         text90=tp.nlp(bar90)
-        if(len(text)==0 and len(text90)==0):
+        if(True):           #if(len(text)==0 and len(text90)==0): there might be IDs other than barcode ID too
             res=rs.rsize(Input_image)
             val=pytesseract.image_to_string(res)
             textfree=tp.nlp(val)
